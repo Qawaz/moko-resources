@@ -11,8 +11,10 @@ actual open class FileResource(
     val filePath: String
 ) {
     fun readText(): String {
-        val stream = resourcesClassLoader.getResourceAsStream(filePath)
-            ?: throw FileNotFoundException("Couldn't open resource as stream at: $filePath")
+        // https://github.com/icerockdev/moko-resources/issues/424
+        val jvmFilePath = filePath.replace('\\', '/')
+        val stream = resourcesClassLoader.getResourceAsStream(jvmFilePath)
+            ?: throw FileNotFoundException("Couldn't open resource as stream at: $jvmFilePath")
         return stream.use { it.readBytes().decodeToString() }
     }
 }
