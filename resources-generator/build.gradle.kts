@@ -10,7 +10,7 @@ plugins {
     id("java-gradle-plugin")
 }
 
-group = "dev.icerock.moko"
+group = "com.qawaz.moko.plugin"
 version = libs.versions.mokoResourcesVersion.get()
 
 dependencies {
@@ -42,7 +42,7 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach 
 gradlePlugin {
     plugins {
         create("multiplatform-resources") {
-            id = "dev.icerock.mobile.multiplatform-resources"
+            id = "plugin.multiplatform-resources"
             implementationClass = "dev.icerock.gradle.MultiplatformResourcesPlugin"
         }
     }

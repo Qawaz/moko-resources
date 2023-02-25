@@ -10,6 +10,15 @@ plugins {
 }
 
 publishing {
+
+    repositories.maven("https://maven.pkg.github.com/Qawaz/moko-resources") {
+        name = "GithubPackages"
+        credentials {
+            username = (System.getenv("GPR_USER"))!!.toString()
+            password = (System.getenv("GPR_API_KEY"))!!.toString()
+        }
+    }
+
     repositories.maven("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/") {
         name = "OSSRH"
 
