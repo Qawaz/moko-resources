@@ -7,11 +7,13 @@ package dev.icerock.moko.resources.compose
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
 import androidx.compose.runtime.produceState
+import androidx.compose.ui.platform.LocalContext
 import dev.icerock.moko.resources.AssetResource
 
 @Composable
 actual fun AssetResource.readAsTextState() : State<String> {
+    val context = LocalContext.current
     return produceState(""){
-        value = readText()
+        value = readText(context)
     }
 }

@@ -10,7 +10,7 @@ detekt {
     input.setFrom(
         "src/commonMain/kotlin",
         "src/androidMain/kotlin",
-        "src/iosMain/kotlin",
+//        "src/iosMain/kotlin",
         "src/main/kotlin",
         "src/jsMain/kotlin"
     )

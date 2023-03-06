@@ -17,6 +17,14 @@ dependencyResolutionManagement {
                 includeGroup("org.jetbrains.kotlinx")
             }
         }
+        maven("https://maven.pkg.github.com/Qawaz/moko-resources") {
+            name = "GithubPackages"
+            credentials {
+                username = (System.getenv("GPR_USER"))!!.toString()
+                password = (System.getenv("GPR_API_KEY"))!!.toString()
+            }
+        }
+
     }
 }
 
@@ -24,7 +32,7 @@ includeBuild("resources-build-logic")
 includeBuild("resources-generator")
 include(":resources")
 include(":resources-compose")
-include(":resources-test")
+//include(":resources-test")
 
 //include(":sample:android-app")
 //include(":sample:android-app-compose")

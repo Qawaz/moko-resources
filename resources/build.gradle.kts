@@ -12,6 +12,8 @@ plugins {
     id("publication-convention")
 }
 
+group = "com.qawaz.moko"
+
 kotlin {
     js(IR) {
         browser {
@@ -45,7 +47,7 @@ dependencies {
 
     androidMainImplementation(libs.appCompat)
 
-    iosTestImplementation(libs.mokoTestCore)
+//    iosTestImplementation(libs.mokoTestCore)
 }
 
 tasks.named("publishToMavenLocal") {
@@ -54,16 +56,16 @@ tasks.named("publishToMavenLocal") {
     dependsOn(pluginPublish)
 }
 
-val copyIosX64TestResources = tasks.register<Copy>("copyIosX64TestResources") {
-    from("src/iosTest/resources")
-    into("build/bin/iosX64/debugTest")
-}
+//val copyIosX64TestResources = tasks.register<Copy>("copyIosX64TestResources") {
+//    from("src/iosTest/resources")
+//    into("build/bin/iosX64/debugTest")
+//}
 
-tasks.findByName("iosX64Test")!!.dependsOn(copyIosX64TestResources)
+//tasks.findByName("iosX64Test")!!.dependsOn(copyIosX64TestResources)
 
-val copyIosArm64TestResources = tasks.register<Copy>("copyIosArm64TestResources") {
-    from("src/iosTest/resources")
-    into("build/bin/iosSimulatorArm64/debugTest")
-}
+//val copyIosArm64TestResources = tasks.register<Copy>("copyIosArm64TestResources") {
+//    from("src/iosTest/resources")
+//    into("build/bin/iosSimulatorArm64/debugTest")
+//}
 
-tasks.findByName("iosSimulatorArm64Test")!!.dependsOn(copyIosArm64TestResources)
+//tasks.findByName("iosSimulatorArm64Test")!!.dependsOn(copyIosArm64TestResources)

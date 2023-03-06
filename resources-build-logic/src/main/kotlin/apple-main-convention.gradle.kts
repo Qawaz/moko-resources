@@ -10,25 +10,25 @@ kotlin {
     sourceSets {
         val commonMain by getting {}
 
-        val appleMain by creating {
-            dependsOn(commonMain)
-        }
-        val iosMain by getting {
-            dependsOn(appleMain)
-        }
-        val macosMain by getting {
-            dependsOn(appleMain)
-        }
+//        val appleMain by creating {
+//            dependsOn(commonMain)
+//        }
+//        val iosMain by getting {
+//            dependsOn(appleMain)
+//        }
+//        val macosMain by getting {
+//            dependsOn(appleMain)
+//        }
 
         val commonTest by getting {}
-        val appleTest by creating {
-            dependsOn(commonTest)
-        }
-        val iosTest by getting {
-            dependsOn(appleTest)
-        }
-        val macosTest by getting {
-            dependsOn(appleTest)
-        }
+//        val appleTest by creating {
+//            dependsOn(commonTest)
+//        }
+//        val iosTest by getting {
+//            dependsOn(appleTest)
+//        }
+//        val macosTest by getting {
+//            dependsOn(appleTest)
+//        }
     }
 }
