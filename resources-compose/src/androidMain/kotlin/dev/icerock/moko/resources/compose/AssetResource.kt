@@ -11,9 +11,9 @@ import androidx.compose.ui.platform.LocalContext
 import dev.icerock.moko.resources.AssetResource
 
 @Composable
-actual fun AssetResource.readAsTextState() : State<String> {
+actual fun AssetResource.readTextAsState(): State<String> {
     val context = LocalContext.current
-    return produceState(""){
+    return produceState("") {
         value = readText(context)
     }
 }

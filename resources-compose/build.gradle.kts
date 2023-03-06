@@ -11,10 +11,8 @@ plugins {
     id("javadoc-stub-convention")
     id("multiplatform-android-publish-convention")
     id("publication-convention")
-//    id("dev.icerock.mobile.multiplatform.android-manifest")
+    id("dev.icerock.mobile.multiplatform.android-manifest")
 }
-
-group = "com.qawaz.moko"
 
 java {
     toolchain {
@@ -32,7 +30,6 @@ kotlin {
     jvm()
     js(IR) {
         browser()
-        binaries.executable()
     }
     sourceSets {
         commonMain {
