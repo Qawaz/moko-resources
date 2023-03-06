@@ -25,7 +25,7 @@ class JvmAssetsGenerator(
     override fun getPropertyInitializer(fileSpec: AssetSpecFile) = CodeBlock.of(
         "AssetResource(resourcesClassLoader = resourcesClassLoader, originalPath = %S, path = %S)",
         fileSpec.pathRelativeToBase,
-        File(FILES_DIR, fileSpec.pathRelativeToBase).path.replace('\\','/')
+        File(FILES_DIR, fileSpec.pathRelativeToBase).path.replace('\\', '/')
     )
 
     override fun generateResources(
