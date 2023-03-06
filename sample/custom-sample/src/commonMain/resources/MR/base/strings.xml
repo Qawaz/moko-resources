@@ -1,0 +1,63 @@
+<!--
+  ~ Copyright 2023 IceRock MAG Inc. Use of this source code is governed by the Apache 2.0 license.
+  -->
+
+<resources>
+    <string name="app_name">easyToDo</string>
+    <string name="urgent">Urgent</string>
+    <string name="high">High</string>
+    <string name="medium">Medium</string>
+    <string name="low">Low</string>
+    <string name="no_priority">No Priority</string>
+    <string name="create_tag">Create Tag</string>
+    <string name="update_tag">Update Tag</string>
+    <string name="edit_tag">Edit Tag</string>
+    <string name="no_tags_matching">No Tags Matching That Title</string>
+    <string name="set_a_reminder">Set A Reminder</string>
+    <string name="title">Title</string>
+    <string name="set">Set</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="repeats">Repeats</string>
+    <string name="does_not_repeat">Does not repeat</string>
+    <string name="rings">Rings</string>
+    <string name="rang">Rang</string>
+    <string name="forever">Forever</string>
+    <string name="until_date">Until Date</string>
+    <string name="until_events">Until Events</string>
+    <string name="none">None</string>
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Yearly</string>
+    <string name="custom">Custom</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="next_week">Next Week</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="hourly">Hourly</string>
+    <string name="same_day_of_the_next_month">Same Day of The Next Month</string>
+    <string name="same_date_of_the_next_month">Same Date of The Next Month</string>
+    <string name="repeats_until">Repeats Until</string>
+    <string name="repeats_for">Repeats For</string>
+    <string name="unknown">Unknown</string>
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+    <string name="night">Night</string>
+    <string name="pick_time">Pick Time</string>
+    <string name="once">Once</string>
+    <string name="sort_by">Sort By</string>
+    <string name="last_modified">Last modified</string>
+    <string name="name">Name</string>
+    <string name="created_date">Created Date</string>
+    <string name="priority">Priority</string>
+    <string name="ok">Ok</string>
+    <string name="descending">Descending</string>
+    <string name="ascending">Ascending</string>
+    <string name="atoz">A to Z</string>
+    <string name="ztoa">Z to A</string>
+    <string name="todos">Todos</string>
+    <string name="finished">Finished</string>
+</resources>
